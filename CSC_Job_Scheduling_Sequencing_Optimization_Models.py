@@ -10,7 +10,7 @@ import numpy as np
 
 drive.mount('/content/drive')
 
-#Search Parameters setup
+#Search Parameters Setup
 filename = 'PPbyLine_Output.xlsx'
 search_path = '/content/drive/My Drive'
 
@@ -27,7 +27,7 @@ def findDay(start_date):
     day = datetime.datetime.strptime(start_date, '%m/%d/%Y').weekday()
     return (day)
 
-#Set Scheduling Start Date!
+#Set Scheduling Start Date
 scheduling_start_date = '08/07/2023'
 start_date = findDay(scheduling_start_date)
 
